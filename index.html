@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipsariya Free</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1>🎥 Sipsariya Free</h1>
+            </div>
+            <div class="counter">
+                <div class="counter-label">VIEWS:</div>
+                <div class="counter-display" id="viewCounter">000000</div>
+            </div>
+        </div>
+        
+        <div class="subtitle-bar">
+            <h2>සිංහල විශේෂ පුනරීක්ෂණ - 11 ශ්‍රේණිය (2025)</h2>
+        </div>
+        
+        <div class="main-content">
+            <div class="control-panel">
+                <label for="monthSelect">SELECT MONTH:</label>
+                <select id="monthSelect" onchange="loadVideos()">
+                    <option value="">-- Choose Month --</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                    <option value="january">January</option>
+                </select>
+            </div>
+            
+            <div class="video-list" id="videoList">
+                <div class="placeholder">
+                    👆 Please select a month from the dropdown above
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <marquee>Welcome to the Video Archive! • Select a month to view videos • Updated Daily! • Best viewed in 800x600 resolution •</marquee>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
